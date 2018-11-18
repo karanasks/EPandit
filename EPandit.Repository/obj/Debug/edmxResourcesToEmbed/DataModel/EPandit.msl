@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EPanditModelStoreContainer" CdmEntityContainer="EPanditEntities">
+    <EntitySetMapping Name="MeasurementUnitMasters">
+      <EntityTypeMapping TypeName="EPanditModel.MeasurementUnitMaster">
+        <MappingFragment StoreEntitySet="MeasurementUnitMaster">
+          <ScalarProperty Name="MeasurementUnitMasterId" ColumnName="MeasurementUnitMasterId" />
+          <ScalarProperty Name="MeasurementUnit" ColumnName="MeasurementUnit" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PanditDetails">
+      <EntityTypeMapping TypeName="EPanditModel.PanditDetail">
+        <MappingFragment StoreEntitySet="PanditDetail">
+          <ScalarProperty Name="PanditDetailId" ColumnName="PanditDetailId" />
+          <ScalarProperty Name="UserMasterId" ColumnName="UserMasterId" />
+          <ScalarProperty Name="YearsOfExperience" ColumnName="YearsOfExperience" />
+          <ScalarProperty Name="PanditDescription" ColumnName="PanditDescription" />
+          <ScalarProperty Name="OrganisationName" ColumnName="OrganisationName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PanditPoojaMappings">
+      <EntityTypeMapping TypeName="EPanditModel.PanditPoojaMapping">
+        <MappingFragment StoreEntitySet="PanditPoojaMapping">
+          <ScalarProperty Name="PanditPoojaMappingId" ColumnName="PanditPoojaMappingId" />
+          <ScalarProperty Name="UserMasterId" ColumnName="UserMasterId" />
+          <ScalarProperty Name="PoojaMasterId" ColumnName="PoojaMasterId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PoojaMasters">
+      <EntityTypeMapping TypeName="EPanditModel.PoojaMaster">
+        <MappingFragment StoreEntitySet="PoojaMaster">
+          <ScalarProperty Name="PoojaMasterId" ColumnName="PoojaMasterId" />
+          <ScalarProperty Name="PoojaName" ColumnName="PoojaName" />
+          <ScalarProperty Name="PoojaDescription" ColumnName="PoojaDescription" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PoojaSamagriMappings">
+      <EntityTypeMapping TypeName="EPanditModel.PoojaSamagriMapping">
+        <MappingFragment StoreEntitySet="PoojaSamagriMapping">
+          <ScalarProperty Name="PoojaSamagriMappingId" ColumnName="PoojaSamagriMappingId" />
+          <ScalarProperty Name="PoojaMasterId" ColumnName="PoojaMasterId" />
+          <ScalarProperty Name="SamagriMasterId" ColumnName="SamagriMasterId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="MeasurementUnitMasterId" ColumnName="MeasurementUnitMasterId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SamagriMasters">
+      <EntityTypeMapping TypeName="EPanditModel.SamagriMaster">
+        <MappingFragment StoreEntitySet="SamagriMaster">
+          <ScalarProperty Name="SamagriMasterId" ColumnName="SamagriMasterId" />
+          <ScalarProperty Name="SamagriName" ColumnName="SamagriName" />
+          <ScalarProperty Name="SamagriDescription" ColumnName="SamagriDescription" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserMasters">
+      <EntityTypeMapping TypeName="EPanditModel.UserMaster">
+        <MappingFragment StoreEntitySet="UserMaster">
+          <ScalarProperty Name="UserMasterId" ColumnName="UserMasterId" />
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="WhatsappMobileNumber" ColumnName="WhatsappMobileNumber" />
+          <ScalarProperty Name="AlternateMobileNumber1" ColumnName="AlternateMobileNumber1" />
+          <ScalarProperty Name="AlternateMobileNumber2" ColumnName="AlternateMobileNumber2" />
+          <ScalarProperty Name="AlternateMobileNumber3" ColumnName="AlternateMobileNumber3" />
+          <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+          <ScalarProperty Name="HomeLongitude" ColumnName="HomeLongitude" />
+          <ScalarProperty Name="HomeLatitude" ColumnName="HomeLatitude" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserCity" ColumnName="UserCity" />
+          <ScalarProperty Name="UserState" ColumnName="UserState" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="EPanditModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRole">
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
